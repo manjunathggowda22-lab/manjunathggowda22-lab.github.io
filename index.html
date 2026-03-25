@@ -1,23 +1,124 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
 <head>
-    <title>Vihara Group</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vihara Group</title>
+
+<style>
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    line-height: 1.6;
+    color: #333;
+}
+
+header {
+    background: #0a3d62;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav {
+    background: #1e5f8a;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section {
+    padding: 40px 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+    background: #f4f6f7;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+}
+
+.card {
+    background: #ffffff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+footer {
+    text-align: center;
+    background: #0a3d62;
+    color: white;
+    padding: 20px;
+}
+</style>
+
 </head>
-<body style="font-family: Arial; text-align: center; padding: 50px;">
+
+<body>
+
+<header>
     <h1>Vihara Group</h1>
-    <p>Advancing research, psychology, and academic excellence.</p>
+    <p>Advancing Research, Psychology & Academic Excellence</p>
+</header>
 
-```
-<h2>About Us</h2>
-<p>Vihara Group is dedicated to research, training, and student development.</p>
+<nav>
+    <a href="#about">About</a>
+    <a href="#research">Research</a>
+    <a href="#training">Training</a>
+    <a href="#contact">Contact</a>
+</nav>
 
-<h2>Training Programs</h2>
-<p>Workshops on Jamovi, research methods, and academic writing.</p>
+<div class="hero">
+    <h1>Welcome to Vihara Group</h1>
+    <p>Empowering students and researchers through knowledge, training, and innovation.</p>
+</div>
 
-<h2>Contact</h2>
-<p>Email: admin@viharagroup.in</p>
-```
+<section id="about">
+    <div class="card">
+        <h2>About Us</h2>
+        <p>Vihara Group is an academic initiative dedicated to research, psychological well-being, and professional development. We aim to bridge theory and practice through meaningful learning experiences.</p>
+    </div>
+</section>
+
+<section id="research">
+    <div class="card">
+        <h2>Research</h2>
+        <p>Our work focuses on psychological well-being, digital behavior, and contemporary social issues. We emphasize evidence-based and impactful research.</p>
+    </div>
+</section>
+
+<section id="training">
+    <div class="card">
+        <h2>Training Programs</h2>
+        <p>We offer hands-on workshops on Jamovi, research methodology, and academic writing to support students and researchers.</p>
+    </div>
+</section>
+
+<section id="contact">
+    <div class="card">
+        <h2>Contact</h2>
+        <p>Email: admin@viharagroup.in</p>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Vihara Group | All Rights Reserved</p>
+</footer>
 
 </body>
 </html>
