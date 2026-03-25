@@ -6,34 +6,30 @@
 <title>Vihara Foundation</title>
 
 <style>
-
-/* ===== RESET ===== */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body {
     font-family: 'Segoe UI', sans-serif;
-    background: #f4f7fb;
-    color: #333;
 }
 
 /* ===== HEADER ===== */
 header {
     position: sticky;
     top: 0;
-    z-index: 1000;
-    background: rgba(15, 59, 87, 0.95);
+    background: rgba(15,59,87,0.95);
     backdrop-filter: blur(10px);
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px 40px;
+    z-index: 1000;
 }
 
-/* LOGO */
 .logo {
     display: flex;
     align-items: center;
@@ -41,29 +37,27 @@ header {
 
 .logo img {
     height: 65px;
-    margin-right: 15px;
     background: white;
     padding: 5px;
     border-radius: 10px;
+    margin-right: 12px;
 }
 
 .logo-text h1 {
-    font-size: 22px;
     color: white;
+    font-size: 22px;
 }
 
 .tagline {
-    font-size: 13px;
     color: #6fd46f;
+    font-size: 13px;
 }
 
-/* NAV */
 nav a {
     color: white;
     margin-left: 25px;
     text-decoration: none;
     font-weight: 500;
-    transition: 0.3s;
 }
 
 nav a:hover {
@@ -74,172 +68,124 @@ nav a:hover {
 .hero {
     height: 90vh;
     background: linear-gradient(rgba(15,59,87,0.85), rgba(15,59,87,0.9)),
-                url('https://images.unsplash.com/photo-1523240795612-9a054b0db644');
+    url('https://images.unsplash.com/photo-1523240795612-9a054b0db644');
     background-size: cover;
-    background-position: center;
     display: flex;
     align-items: center;
     padding: 60px;
     color: white;
 }
 
-.hero-content {
-    max-width: 600px;
-    animation: fadeUp 1s ease;
-}
-
 .hero h1 {
-    font-size: 50px;
-    margin-bottom: 20px;
+    font-size: 48px;
+    margin-bottom: 15px;
 }
 
 .hero p {
-    font-size: 18px;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
 }
 
-/* BUTTONS */
 .btn {
-    padding: 12px 25px;
+    padding: 12px 20px;
     border-radius: 6px;
     border: none;
-    margin-right: 10px;
     cursor: pointer;
-    font-weight: bold;
-    transition: 0.3s;
+    margin-right: 10px;
 }
 
 .btn-primary {
     background: #6fd46f;
-    color: black;
-}
-
-.btn-primary:hover {
-    transform: translateY(-2px);
 }
 
 .btn-secondary {
     background: white;
-    color: #0f3b57;
 }
 
-/* ===== FEATURES ===== */
-.features {
-    display: flex;
-    justify-content: center;
-    gap: 25px;
-    margin-top: -70px;
-    padding: 0 40px;
-}
-
-.feature-card {
-    background: rgba(255,255,255,0.2);
-    backdrop-filter: blur(12px);
-    padding: 30px;
-    width: 260px;
-    border-radius: 12px;
-    text-align: center;
-    color: white;
-    background: #0f3b57;
-    transition: 0.3s;
-}
-
-.feature-card:hover {
-    transform: translateY(-10px);
-    background: #145a7a;
-}
-
-/* ===== SECTIONS ===== */
+/* ===== SECTION ===== */
 section {
-    padding: 90px 40px;
+    padding: 80px 40px;
     text-align: center;
 }
 
 section h2 {
-    font-size: 32px;
-    margin-bottom: 20px;
     color: #0f3b57;
+    margin-bottom: 20px;
 }
 
-/* ===== ABOUT ===== */
-.about p {
-    max-width: 800px;
-    margin: auto;
-    line-height: 1.6;
+/* ===== PROGRAMS ===== */
+.programs {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
 }
 
-/* ===== CONTACT ===== */
-.contact {
+.program-card {
+    background: #0f3b57;
+    color: white;
+    padding: 25px;
+    width: 280px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.program-card:hover {
+    transform: translateY(-8px);
+}
+
+/* ===== VISION ===== */
+.vision {
+    background: #f4f7fb;
+}
+
+/* ===== CTA ===== */
+.cta {
     background: #0f3b57;
     color: white;
 }
 
-.contact h2 {
-    color: white;
+/* ===== CONTACT ===== */
+form {
+    max-width: 500px;
+    margin: auto;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
 }
 
 /* ===== FOOTER ===== */
 footer {
     background: #082b40;
     color: white;
+    padding: 25px;
     text-align: center;
-    padding: 20px;
-}
-
-/* ===== ANIMATION ===== */
-@keyframes fadeUp {
-    from {
-        opacity: 0;
-        transform: translateY(40px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
 }
 
 /* ===== MOBILE ===== */
-@media (max-width: 900px) {
-
+@media(max-width:900px) {
     header {
         flex-direction: column;
-        text-align: center;
     }
 
     nav {
         margin-top: 10px;
     }
 
-    nav a {
-        display: inline-block;
-        margin: 8px;
-    }
-
     .hero {
         height: auto;
-        padding: 60px 20px;
         text-align: center;
+        padding: 60px 20px;
     }
 
     .hero h1 {
-        font-size: 32px;
-    }
-
-    .features {
-        flex-direction: column;
-        align-items: center;
-        margin-top: 20px;
-    }
-
-    .feature-card {
-        width: 90%;
-    }
-
-    section {
-        padding: 50px 20px;
+        font-size: 30px;
     }
 }
-
 </style>
 </head>
 
@@ -248,7 +194,7 @@ footer {
 <!-- HEADER -->
 <header>
     <div class="logo">
-        <img src="logo.png" alt="logo">
+        <img src="logo.png">
         <div class="logo-text">
             <h1>Vihara Foundation</h1>
             <div class="tagline">Collaborate • Build • Grow</div>
@@ -258,59 +204,86 @@ footer {
     <nav>
         <a href="#">Home</a>
         <a href="#about">About</a>
-        <a href="#">Programs</a>
+        <a href="#programs">Programs</a>
         <a href="#contact">Contact</a>
     </nav>
 </header>
 
 <!-- HERO -->
 <section class="hero">
-    <div class="hero-content">
+    <div>
         <h1>Building Academic Excellence</h1>
-        <p>Empowering students and researchers through knowledge, training, and innovation.</p>
-
-        <button class="btn btn-primary">Get Started</button>
+        <p>Empowering research, innovation, and knowledge.</p>
+        <button class="btn btn-primary">Join Us</button>
         <button class="btn btn-secondary">Learn More</button>
     </div>
 </section>
 
-<!-- FEATURES -->
-<div class="features">
-    <div class="feature-card">
-        <h3>Research</h3>
-        <p>Academic mentoring and research support.</p>
-    </div>
-
-    <div class="feature-card">
-        <h3>Training</h3>
-        <p>Workshops on Jamovi, methods & writing.</p>
-    </div>
-
-    <div class="feature-card">
-        <h3>Publications</h3>
-        <p>Support for books, journals & academic work.</p>
-    </div>
-</div>
-
 <!-- ABOUT -->
-<section id="about" class="about">
-    <h2>About Vihara Foundation</h2>
+<section id="about">
+    <h2>About Us</h2>
     <p>
-        Vihara Foundation is a platform committed to academic excellence, research development,
-        and innovation. It is the first initiative under Vihara Group — with a vision to build
-        multiple impactful academic and research-driven ventures in the future.
+        Vihara Foundation is the first initiative under Vihara Group.
+        Our vision is to build multiple academic, research, and innovation-based
+        platforms that empower scholars and institutions.
     </p>
 </section>
 
+<!-- PROGRAMS -->
+<section id="programs">
+    <h2>Our Programs</h2>
+
+    <div class="programs">
+        <div class="program-card">
+            <h3>Research Mentoring</h3>
+            <p>Guidance for academic and research development.</p>
+        </div>
+
+        <div class="program-card">
+            <h3>Workshops</h3>
+            <p>Jamovi, research methods, and writing training.</p>
+        </div>
+
+        <div class="program-card">
+            <h3>Publications</h3>
+            <p>Support for journals, books, and academic work.</p>
+        </div>
+    </div>
+</section>
+
+<!-- VISION -->
+<section class="vision">
+    <h2>Our Vision</h2>
+    <p>
+        To build a strong ecosystem of academic excellence under Vihara Group,
+        creating multiple impactful ventures in education, research, and innovation.
+    </p>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+    <h2>Join the Vihara Movement</h2>
+    <p>Be part of a growing academic ecosystem.</p>
+    <button class="btn btn-primary">Get Involved</button>
+</section>
+
 <!-- CONTACT -->
-<section id="contact" class="contact">
-    <h2>Contact</h2>
+<section id="contact">
+    <h2>Contact Us</h2>
+
+    <form>
+        <input type="text" placeholder="Your Name">
+        <input type="email" placeholder="Your Email">
+        <textarea rows="4" placeholder="Your Message"></textarea>
+        <button class="btn btn-primary">Send Message</button>
+    </form>
+
     <p>Email: admin@viharagroup.in</p>
 </section>
 
 <!-- FOOTER -->
 <footer>
-    © 2026 Vihara Foundation
+    <p>© 2026 Vihara Foundation</p>
 </footer>
 
 </body>
