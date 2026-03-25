@@ -10,25 +10,40 @@
 :root {
     --primary: #0b2f4a;
     --accent: #66b34e;
+    --light: #f5f7f9;
 }
 
 body {
     margin: 0;
     font-family: 'Segoe UI', sans-serif;
+    background: var(--light);
 }
 
 /* HEADER */
 header {
     background: var(--primary);
-    color: white;
-    padding: 15px;
+    padding: 15px 40px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
 }
 
-header img {
-    width: 140px;
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-area img {
+    height: 45px;
+    background: white;
+    padding: 4px;
+    border-radius: 6px;
+}
+
+.logo-area h2 {
+    color: white;
+    margin: 0;
 }
 
 nav a {
@@ -36,6 +51,11 @@ nav a {
     margin: 0 15px;
     text-decoration: none;
     font-weight: 600;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: var(--accent);
 }
 
 /* HERO */
@@ -45,7 +65,6 @@ nav a {
     background: url('https://images.unsplash.com/photo-1523240795612-9a054b0db644') no-repeat center/cover;
     display: flex;
     align-items: center;
-    color: white;
 }
 
 .hero::after {
@@ -53,23 +72,27 @@ nav a {
     position: absolute;
     width: 100%;
     height: 100%;
-    background: rgba(11, 47, 74, 0.7);
+    background: rgba(11, 47, 74, 0.75);
 }
 
 .hero-content {
     position: relative;
+    color: white;
     max-width: 600px;
     margin-left: 60px;
 }
 
 .hero h1 {
     font-size: 3em;
+    margin-bottom: 10px;
 }
 
 .hero p {
     margin: 20px 0;
+    color: #d1e8d1;
 }
 
+/* BUTTONS */
 .btn {
     padding: 12px 20px;
     margin-right: 10px;
@@ -100,7 +123,7 @@ nav a {
 .feature-card {
     background: white;
     padding: 25px;
-    width: 250px;
+    width: 260px;
     text-align: center;
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
@@ -110,17 +133,23 @@ nav a {
     color: var(--primary);
 }
 
-.feature-card p {
-    color: #666;
-}
-
-/* SECTION */
+/* SECTIONS */
 section {
-    padding: 60px 20px;
     max-width: 1000px;
     margin: auto;
+    padding: 60px 20px;
 }
 
+h2 {
+    color: var(--primary);
+}
+
+.highlight {
+    color: var(--accent);
+    font-weight: bold;
+}
+
+/* FOOTER */
 footer {
     background: var(--primary);
     color: white;
@@ -134,10 +163,9 @@ footer {
 <body>
 
 <header>
-    <header>
-    <div style="display:flex; align-items:center; gap:15px;">
-        <img src="logo.png" alt="Vihara Logo" style="height:50px; background:white; padding:5px; border-radius:5px;">
-        <h2 style="margin:0;">Vihara Group</h2>
+    <div class="logo-area">
+        <img src="logo.png" alt="Vihara Logo">
+        <h2>Vihara Group</h2>
     </div>
 
 ```
@@ -149,14 +177,6 @@ footer {
 </nav>
 ```
 
-</header>
-
-    <nav>
-        <a href="#">Home</a>
-        <a href="#about">About</a>
-        <a href="#foundation">Foundation</a>
-        <a href="#contact">Contact</a>
-    </nav>
 </header>
 
 <div class="hero">
@@ -191,15 +211,19 @@ footer {
 <section id="about">
     <h2>About Vihara</h2>
     <p>
-    Vihara Group is a collaborative academic platform focused on research, training, and innovation. 
-    It aims to create a meaningful academic ecosystem for scholars and institutions.
+    VIHARA was born from a deep commitment to elevate academic and research excellence. 
+    It is a platform built to support scholars, empower institutions, and create meaningful academic impact.
+    </p>
+    <p>
+    Through webinars, seminars, conferences, and mentoring, VIHARA aims to be a 
+    <span class="highlight">one-stop solution for academic growth</span>.
     </p>
 </section>
 
 <section id="foundation">
     <h2>Vihara Foundation</h2>
     <p>
-    The first initiative under Vihara Group, focusing on training, research support, and academic development.
+    Vihara Foundation is the first initiative under Vihara Group, focused on training, research support, and academic development.
     </p>
 </section>
 
@@ -209,7 +233,7 @@ footer {
 </section>
 
 <footer>
-    <p>© 2026 Vihara Group</p>
+    <p>© 2026 Vihara Group | All Rights Reserved</p>
 </footer>
 
 </body>
