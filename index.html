@@ -10,15 +10,19 @@
 body {
     font-family: 'Segoe UI', sans-serif;
     margin: 0;
-    line-height: 1.6;
     color: #333;
 }
 
 header {
     background: #0a3d62;
     color: white;
-    padding: 20px 0;
     text-align: center;
+    padding: 20px;
+}
+
+header img {
+    width: 120px;
+    margin-bottom: 10px;
 }
 
 nav {
@@ -26,7 +30,7 @@ nav {
     display: flex;
     justify-content: center;
     gap: 30px;
-    padding: 10px;
+    padding: 12px;
 }
 
 nav a {
@@ -35,35 +39,37 @@ nav a {
     font-weight: bold;
 }
 
-section {
-    padding: 40px 20px;
-    max-width: 900px;
-    margin: auto;
-}
-
 .hero {
     text-align: center;
     padding: 60px 20px;
     background: #f4f6f7;
 }
 
-.hero h1 {
-    font-size: 2.5em;
+section {
+    max-width: 1000px;
+    margin: auto;
+    padding: 40px 20px;
 }
 
 .card {
-    background: #ffffff;
-    padding: 20px;
-    margin: 20px 0;
+    background: white;
+    padding: 25px;
     border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    margin: 20px 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.dark {
+    background: #0a3d62;
+    color: #7ed957;
+    text-align: center;
 }
 
 footer {
     text-align: center;
+    padding: 20px;
     background: #0a3d62;
     color: white;
-    padding: 20px;
 }
 </style>
 
@@ -72,40 +78,65 @@ footer {
 <body>
 
 <header>
+    <img src="https://via.placeholder.com/120" alt="Logo">
     <h1>Vihara Group</h1>
-    <p>Advancing Research, Psychology & Academic Excellence</p>
+    <p>Collaborate • Build • Grow</p>
 </header>
 
 <nav>
     <a href="#about">About</a>
-    <a href="#research">Research</a>
-    <a href="#training">Training</a>
+    <a href="#foundation">Foundation</a>
+    <a href="#vision">Vision</a>
     <a href="#contact">Contact</a>
 </nav>
 
 <div class="hero">
     <h1>Welcome to Vihara Group</h1>
-    <p>Empowering students and researchers through knowledge, training, and innovation.</p>
+    <p>Building a collaborative ecosystem for academic excellence and innovation.</p>
 </div>
 
 <section id="about">
     <div class="card">
-        <h2>About Us</h2>
-        <p>Vihara Group is an academic initiative dedicated to research, psychological well-being, and professional development. We aim to bridge theory and practice through meaningful learning experiences.</p>
+        <h2>About Vihara</h2>
+        <p>
+        VIHARA was born from a deep commitment to elevate academic and research excellence. 
+        It is a platform built to support scholars, empower institutions, and create meaningful academic impact.
+        </p>
+        <p>
+        Through webinars, seminars, conferences, research mentoring, and academic services, 
+        VIHARA strives to be a one-stop solution for academic growth.
+        </p>
+        <p>
+        VIHARA is not an individual effort — it is a collective vision driven by collaboration, innovation, and excellence.
+        </p>
     </div>
 </section>
 
-<section id="research">
+<section id="foundation">
     <div class="card">
-        <h2>Research</h2>
-        <p>Our work focuses on psychological well-being, digital behavior, and contemporary social issues. We emphasize evidence-based and impactful research.</p>
+        <h2>Vihara Foundation</h2>
+        <p>
+        Vihara Foundation is the first initiative under Vihara Group, focused on academic development, 
+        research support, and training programs.
+        </p>
+        <p>
+        It marks the beginning of a larger journey toward building multiple impactful ventures 
+        under the Vihara ecosystem.
+        </p>
     </div>
 </section>
 
-<section id="training">
+<section id="vision" class="dark">
     <div class="card">
-        <h2>Training Programs</h2>
-        <p>We offer hands-on workshops on Jamovi, research methodology, and academic writing to support students and researchers.</p>
+        <h2>Our Vision</h2>
+        <p>
+        To build a dynamic ecosystem of initiatives under Vihara Group that collectively contribute 
+        to academic excellence, innovation, and societal impact.
+        </p>
+        <p>
+        We envision multiple ventures in research, education, publishing, and consulting — 
+        all aligned toward one goal: meaningful growth.
+        </p>
     </div>
 </section>
 
@@ -113,6 +144,7 @@ footer {
     <div class="card">
         <h2>Contact</h2>
         <p>Email: admin@viharagroup.in</p>
+        <p>Website: www.viharagroup.in</p>
     </div>
 </section>
 
